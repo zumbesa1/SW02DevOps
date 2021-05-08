@@ -3,6 +3,7 @@
  */
 package SW02;
 
+import com.google.common.net.InternetDomainName;
 import com.mitchtalmadge.asciidata.graph.ASCIIGraph; //Hier erfolgt der Import der Dependency in diese Klasse.
 
 public class App {
@@ -14,5 +15,9 @@ public class App {
 
         String graph = ASCIIGraph.fromSeries(new double[] {1.0,2.0,3.0,10.0,7.0,9.0,5.0,4.0}).plot();  // Hier wird der Graph mit den verschiednen Werten erstellt.
         System.out.println(graph); //Hier wird der Graph in die CLI geprinted
+
+        String url = "www.blog.zhaw.ch";
+        System.out.println("Top Private Domain for " + url + " is:");
+        System.out.println(InternetDomainName.from(url).topPrivateDomain());  //Hier wird die Top Private Domain ausgegeben
     }
 }
