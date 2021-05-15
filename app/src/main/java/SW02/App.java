@@ -8,7 +8,7 @@ import com.mitchtalmadge.asciidata.graph.ASCIIGraph; //Hier erfolgt der Import d
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello World! Hier war Oli";
     }
 
     public static void main(String[] args) {
